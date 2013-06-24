@@ -16,3 +16,5 @@ Usage
 
     ./build-rpm.sh
 
+If everything runs successfully the RPM you are looking for will be 
+in the `RPM/` sub-directory.
