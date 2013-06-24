@@ -7,14 +7,12 @@ set -e
 
 for d in RPMS SRPMS 
 do
-    echo $d
     if [ ! -e $d ]; then
         mkdir $d
     fi
 done
 
 VERSION=$(awk '/^Version: / {print $2}' $BASE/SPECS/squid.spec)
-echo $VERSION
 SQUID_ARCHIVE="squid-$VERSION.tar.gz"
 SQUID_SIGS="$SQUID_ARCHIVE.asc"
 
