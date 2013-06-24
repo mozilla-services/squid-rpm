@@ -1,0 +1,10 @@
+# these are the build directories...
+RPMS
+SRPMS
+
+# no point in commiting a ton of bits we can get off the 
+# internet ...
+SOURCES/*.tar.gz
+SOURCES/*.tar.gz.asc
+
+
